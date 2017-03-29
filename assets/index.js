@@ -1,6 +1,9 @@
+var userInput = $(#addbutton).data(userInput);
+
+var queryURL = "http://api.giphy.com//v1/gifs/search?q=" + userInput + "api_key=dc6zaTOxFJmzC";
+
 $("#search-button").on("click", function () {
 
-var queryURL = "http://api.giphy.com//v1/gifs/search?q=" + "" + "api_key=dc6zaTOxFJmzC";
     $.ajax({
       url: queryURL,
       method: 'GET'
