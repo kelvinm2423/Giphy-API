@@ -1,4 +1,4 @@
-var userInput = $(#addbutton).data(userInput);
+var userInput = $(this).data('userInput');
 
 var queryURL = "http://api.giphy.com//v1/gifs/search?q=" + userInput + "api_key=dc6zaTOxFJmzC";
 
